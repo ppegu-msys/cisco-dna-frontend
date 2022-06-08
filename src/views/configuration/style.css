@@ -1,0 +1,23 @@
+.step-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #0353a8;
+}
+
+.step-subtitle {
+  font-size: 12px;
+  font-weight: 350;
+  color: #8d959c;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 300;
+  color: #121212;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 350;
+  color: #121212;
+}
