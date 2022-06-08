@@ -7,12 +7,12 @@ const IndexView = () => {
 
   return (
     <div className="container-fluid mt-4">
-      <Button variant="primary" onClick={() => navigate("/configure-on-prem")}>
+      <Button variant="primary" onClick={() => navigate("/configure/on-prem")}>
         On Prem Screen
       </Button>
       <Button
         variant="primary"
-        onClick={() => navigate("/network-connectivity-check")}
+        onClick={() => navigate("/configure/connectivity-check")}
       >
         Netwrok Connectivity Check
       </Button>
