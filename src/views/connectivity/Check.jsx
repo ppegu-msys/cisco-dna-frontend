@@ -1,7 +1,7 @@
 import React from "react";
-import CheckingImage from "src/assets/network-connectivity-check.jpg";
-import SuccessImage from "src/assets/network-connectivity-success.jpg";
 import "./styles.css";
+import CheckingSvg from "src/assets/network-connectivity-check.svg";
+import SuccessSvg from "src/assets/network-connectivity-success.svg";
 
 const NetwrokConnectivityCheck = ({ success }) => {
   return (
@@ -17,7 +17,7 @@ const NetwrokConnectivityCheck = ({ success }) => {
           <div className="row justify-content-center img-container">
             <img
               alt="network-connectivity-check.png"
-              src={success ? SuccessImage : CheckingImage}
+              src={success ? SuccessSvg : CheckingSvg}
               className="checking-img"
             />
           </div>

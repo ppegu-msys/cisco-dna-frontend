@@ -12,7 +12,7 @@ const App = () => {
         <Route path="/configure-on-prem" element={<ConfigureOnprem />} />
         <Route
           path="/network-connectivity-check"
-          element={<NetwrokConnectivityCheck success={false} />}
+          element={<NetwrokConnectivityCheck success={true} />}
         />
       </Routes>
     </BrowserRouter>
