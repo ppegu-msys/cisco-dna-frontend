@@ -10,6 +10,12 @@ const IndexView = () => {
       <Button variant="primary" onClick={() => navigate("/configure-on-prem")}>
         On Prem Screen
       </Button>
+      <Button
+        variant="primary"
+        onClick={() => navigate("/network-connectivity-check")}
+      >
+        Netwrok Connectivity Check
+      </Button>
     </div>
   );
 };
