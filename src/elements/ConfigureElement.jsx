@@ -30,7 +30,7 @@ const ConfigureElement = () => {
 
   return (
     <div className="container-fluid">
-      <div className="row mt-5">
+      <div className="row mt-5 mb-5">
         <div className="col-3">
           <TimeLine steps={steps} />
         </div>
@@ -39,7 +39,12 @@ const ConfigureElement = () => {
         </div>
       </div>
 
-      <div className="footer">
+      <div
+        className="footer"
+        style={{
+          overflow: "hidden",
+        }}
+      >
         <div className="row container-fluid justify-content-between align-items-center h-100">
           <div className="col-1 row justify-content-center align-items-center mx-3">
             <Button variant="light" className="exit-button">

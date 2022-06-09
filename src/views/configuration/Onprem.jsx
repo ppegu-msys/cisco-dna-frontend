@@ -1,7 +1,6 @@
 import React from "react";
 import { Alert, Button } from "react-bootstrap";
 import DownloadIcon from "src/assets/download.svg";
-import "./style.css";
 
 const OnpremView = () => {
   return (
