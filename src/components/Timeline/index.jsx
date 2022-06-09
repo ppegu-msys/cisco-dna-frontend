@@ -1,9 +1,12 @@
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useSelector } from "react-redux";
 import "./styles.css";
 
 const TimeLine = ({ steps }) => {
+  const configure = useSelector((state) => state.configure);
+
   return (
     <div className="row justify-content-center">
       {steps.map((step, i) => (
@@ -12,15 +15,17 @@ const TimeLine = ({ steps }) => {
             <div className="col-2">
               <div
                 className={`${
-                  step.success
+                  configure.currentStep > i
                     ? "oval-done"
-                    : step.active
+                    : i === configure.currentStep
                     ? "oval-active"
                     : "oval"
                 } d-flex justify-content-center align-items-center`}
               >
-                {step.success && <FontAwesomeIcon icon={faCheck} />}
-                {!step.success && <span>{i + 1}</span>}
+                {i > configure.currentStep && (
+                  <FontAwesomeIcon icon={faCheck} />
+                )}
+                {i <= configure.currentStep && <span>{i + 1}</span>}
               </div>
             </div>
             <div className="col-9 d-flex flex-column justify-content-center mx-2">

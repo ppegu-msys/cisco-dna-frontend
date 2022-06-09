@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { Outlet } from "react-router-dom";
+import ExitIcon from "src/assets/icons/exit.svg";
 import TimeLine from "src/components/Timeline";
 import "./styles.css";
-import ExitIcon from "src/assets/icons/exit.svg";
 
 const ConfigureElement = () => {
   const steps = [

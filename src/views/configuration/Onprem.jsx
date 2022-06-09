@@ -3,7 +3,7 @@ import { Alert, Button } from "react-bootstrap";
 import DownloadIcon from "src/assets/download.svg";
 import "./style.css";
 
-const ConfigureOnprem = () => {
+const OnpremView = () => {
   return (
     <div className="col-12">
       <h1 className="title">Configure On-prem</h1>
@@ -49,4 +49,4 @@ const ConfigureOnprem = () => {
   );
 };
 
-export default ConfigureOnprem;
+export default OnpremView;
