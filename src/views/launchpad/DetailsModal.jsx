@@ -35,7 +35,11 @@ const DetailsModal = ({ show, onHide }) => {
         <div className="col-12">
           <div className="row justify-content-end">
             <div className="col-1 text-end">
-              <FontAwesomeIcon icon={faClose} />
+              <FontAwesomeIcon
+                icon={faClose}
+                className="pointer"
+                onClick={onHide}
+              />
             </div>
           </div>
           <h5 className="mt-2">DNAC_VA1</h5>
@@ -208,7 +212,9 @@ const DetailsModal = ({ show, onHide }) => {
       </Modal.Body>
       <Modal.Footer>
         <div className="d-flex flex-row-reverse px-4">
-          <button className="btn btn-outline-primary px-5">Close</button>
+          <button onClick={onHide} className="btn btn-outline-primary px-5">
+            Close
+          </button>
         </div>
       </Modal.Footer>
     </Modal>
