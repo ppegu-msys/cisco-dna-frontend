@@ -1,6 +1,7 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import LaunchPadHome from "./Home";
+import RcaScreen from "./RcaScreen";
 import "./styles.css";
 
 const LaunchPad = () => {
@@ -17,7 +18,9 @@ const LaunchPad = () => {
       </nav>
       <div className="p-2">
         <Routes>
-          <Route index element={<LaunchPadHome />} />
+          <Route index element={<Navigate to="rca" />} />
+          <Route path="/home" element={<LaunchPadHome />} />
+          <Route path="/rca" element={<RcaScreen />} />
         </Routes>
       </div>
     </div>
